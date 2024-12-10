@@ -1,0 +1,43 @@
+{
+  "name": "paste-plain-text",
+  "version": "1.0.0",
+  "private": false,
+  "type": "module",
+  "license": "MIT",
+  "main": "./dist/paste-plain-text.js.umd.cjs",
+  "module": "./dist/paste-plain-text.js.js",
+  "exports": {
+    ".": {
+      "import": "./dist/paste-plain-text.js.js",
+      "require": "./dist/paste-plain-text.js.umd.cjs"
+    }
+  },
+  "keywords": [
+    "paste",
+    "plain-text",
+    "vue3",
+    "vue",
+    "vuejs"
+  ],
+
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --fix",
+    "format": "prettier --write src/"
+  },
+  "dependencies": {
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.14.0",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "@vue/eslint-config-prettier": "^10.1.0",
+    "eslint": "^9.14.0",
+    "eslint-plugin-vue": "^9.30.0",
+    "prettier": "^3.3.3",
+    "vite": "^6.0.1",
+    "vite-plugin-vue-devtools": "^7.6.5"
+  }
+}
